@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: process.env.SITE_URL || 'https://example.com',
+  site: process.env.SITE_URL || 'https://r3-services.com',
   integrations: [sitemap()],
   image: {
     // Add your R2 public domain here so Astro can optimize images from it

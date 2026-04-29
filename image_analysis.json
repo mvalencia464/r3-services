@@ -1,0 +1,206 @@
+[
+  {
+    "image": "R3-1.jpg",
+    "description": "Standard commercial restroom toilet.",
+    "problems_solved": "General plumbing maintenance and facility upkeep.",
+    "service_mapping": "Facility Maintenance (Not explicitly listed in core services)"
+  },
+  {
+    "image": "R3-2.jpg",
+    "description": "Close-up of a dirty, clogged condenser or evaporator coil.",
+    "problems_solved": "Restores airflow and heat transfer efficiency, preventing system overheating and failure.",
+    "service_mapping": "4. Preventive Maintenance Programs (HVAC/Refrigeration Maintenance)"
+  },
+  {
+    "image": "R3-3.jpg",
+    "description": "Disassembled mechanical drive components (sprocket, bearings) on a stainless steel surface.",
+    "problems_solved": "Repairing broken or worn mechanical linkages, likely for a conveyor oven.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Hot-Side Equipment Repair)"
+  },
+  {
+    "image": "R3-4.jpg",
+    "description": "Close-up of a drive sprocket on a shaft with a motor/solenoid in the background.",
+    "problems_solved": "Fixing mechanical drive failures to restore equipment operation.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Hot-Side Equipment Repair)"
+  },
+  {
+    "image": "R3-5.jpg",
+    "description": "Electric motor removed from equipment for inspection or replacement.",
+    "problems_solved": "Diagnosing and replacing failed motors to restore ventilation or equipment functionality.",
+    "service_mapping": "2. Commercial Kitchen Equipment / 1. Commercial HVAC Services"
+  },
+  {
+    "image": "R3-6.jpg",
+    "description": "Severely dust and grease-caked motor and housing.",
+    "problems_solved": "Deep cleaning and maintenance to prevent motor burnout and fire hazards.",
+    "service_mapping": "4. Preventive Maintenance Programs (Early Detection / Kitchen Equipment Maintenance)"
+  },
+  {
+    "image": "R3-7.jpg",
+    "description": "Internal electrical and mechanical components heavily coated in dust and debris.",
+    "problems_solved": "Preventing electrical shorts, mechanical binding, and component failure through cleaning.",
+    "service_mapping": "4. Preventive Maintenance Programs"
+  },
+  {
+    "image": "R3-8.jpg",
+    "description": "Middleby Marshall double-stack commercial conveyor pizza ovens.",
+    "problems_solved": "Servicing and repairing core hot-side cooking equipment.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Hot-Side Equipment)"
+  },
+  {
+    "image": "R3-9.jpg",
+    "description": "Close-up of a spark igniter and flame sensor assembly for gas-fired equipment.",
+    "problems_solved": "Troubleshooting and repairing ignition failures in gas ovens or heaters.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Hot-Side Diagnostics)"
+  },
+  {
+    "image": "R3-10.jpg",
+    "description": "Middleby Marshall/Lincoln electric motor heavily caked in dust and flour.",
+    "problems_solved": "Preventive cleaning to extend motor life in harsh kitchen environments.",
+    "service_mapping": "4. Preventive Maintenance Programs (Kitchen Equipment Maintenance)"
+  },
+  {
+    "image": "R3-11.jpg",
+    "description": "Open control panel of commercial equipment showing complex wiring, fans, and circuit boards covered in dust.",
+    "problems_solved": "Electrical and control diagnostics, identifying shorts or control board failures.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Diagnostics) / 4. Preventive Maintenance Programs"
+  },
+  {
+    "image": "R3-12.jpg",
+    "description": "Daikin packaged rooftop HVAC unit (RTU) on a commercial building roof.",
+    "problems_solved": "Repairing and maintaining building heating and cooling systems.",
+    "service_mapping": "1. Commercial HVAC Services (Rooftop units)"
+  },
+  {
+    "image": "R3-13.jpg",
+    "description": "Drain inspection camera setup next to a wet floor sign in a restaurant hallway.",
+    "problems_solved": "Diagnosing and clearing plumbing blockages.",
+    "service_mapping": "Facility Maintenance / Operational Support"
+  },
+  {
+    "image": "R3-14.jpg",
+    "description": "Open electrical timer box with exposed wiring connections.",
+    "problems_solved": "Troubleshooting electrical control and timing issues for equipment.",
+    "service_mapping": "1. Commercial HVAC Services / 2. Commercial Kitchen Equipment (Diagnostics)"
+  },
+  {
+    "image": "R3-15.jpg",
+    "description": "Exterior of a commercial walk-in cooler or freezer door.",
+    "problems_solved": "Maintaining proper temperature control for food safety and inventory protection.",
+    "service_mapping": "3. Commercial Refrigeration (Walk-In Units)"
+  },
+  {
+    "image": "R3-16.jpg",
+    "description": "Middleby Marshall double-stack commercial conveyor pizza ovens.",
+    "problems_solved": "Routine service and repair of high-volume cooking equipment.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Hot-Side Equipment)"
+  },
+  {
+    "image": "R3-17.jpg",
+    "description": "Internal wiring and components severely caked with dust and debris.",
+    "problems_solved": "Mitigating fire risks and electrical failures through deep cleaning.",
+    "service_mapping": "4. Preventive Maintenance Programs"
+  },
+  {
+    "image": "R3-18.jpg",
+    "description": "Small condenser or evaporator coil heavily clogged with dust.",
+    "problems_solved": "Restoring refrigeration performance by cleaning coils to prevent compressor failure.",
+    "service_mapping": "4. Preventive Maintenance Programs (Refrigeration Maintenance)"
+  },
+  {
+    "image": "R3-19.jpg",
+    "description": "Trane outdoor condenser unit for a commercial split HVAC system.",
+    "problems_solved": "Diagnosing and repairing outdoor cooling equipment.",
+    "service_mapping": "1. Commercial HVAC Services (Split systems)"
+  },
+  {
+    "image": "R3-20.jpg",
+    "description": "Large stainless steel equipment component being loaded or unloaded via box truck liftgate.",
+    "problems_solved": "Equipment installation, removal, or heavy transport.",
+    "service_mapping": "Operational Support"
+  },
+  {
+    "image": "R3-21.jpg",
+    "description": "Multiple commercial conveyor ovens lined up, side panels removed.",
+    "problems_solved": "Extensive servicing or installation of major hot-side equipment.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Hot-Side Equipment)"
+  },
+  {
+    "image": "R3-22.jpg",
+    "description": "Digital temperature controllers for a refrigerated prep rail showing temperatures.",
+    "problems_solved": "Diagnosing temperature control issues to ensure food safety compliance.",
+    "service_mapping": "3. Commercial Refrigeration (Specialty Equipment / Prep tables)"
+  },
+  {
+    "image": "R3-23.jpg",
+    "description": "Clamp multimeter taking an amperage reading (8.26A) on a wire.",
+    "problems_solved": "Electrical troubleshooting to identify overdrawing components or verify proper operation.",
+    "service_mapping": "1. Commercial HVAC Services / 2. Commercial Kitchen Equipment (Diagnostics)"
+  },
+  {
+    "image": "R3-24.jpg",
+    "description": "Internal view of an HVAC or refrigeration unit showing the compressor, contactor, capacitor, and piping.",
+    "problems_solved": "Diagnosing refrigerant circuit issues, replacing compressors, or electrical faults.",
+    "service_mapping": "1. Commercial HVAC Services / 3. Commercial Refrigeration"
+  },
+  {
+    "image": "R3-25.jpg",
+    "description": "Pleated air filters installed in an HVAC unit.",
+    "problems_solved": "Maintaining indoor air quality and protecting HVAC equipment from dust buildup.",
+    "service_mapping": "4. Preventive Maintenance Programs (HVAC Maintenance)"
+  },
+  {
+    "image": "R3-26.jpg",
+    "description": "Two newly installed or inspected gas spark igniter/burner tube assemblies.",
+    "problems_solved": "Fixing heating failures in gas equipment by replacing faulty ignition components.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Hot-Side Equipment)"
+  },
+  {
+    "image": "R3-27.jpg",
+    "description": "Belt-driven blower motor assembly for ventilation.",
+    "problems_solved": "Replacing belts or diagnosing airflow issues in ventilation systems.",
+    "service_mapping": "1. Commercial HVAC Services (Ventilation equipment)"
+  },
+  {
+    "image": "R3-28.jpg",
+    "description": "Kolpak walk-in freezer/cooler door in a restaurant.",
+    "problems_solved": "Repairing walk-in refrigeration to prevent product loss.",
+    "service_mapping": "3. Commercial Refrigeration (Walk-In Units)"
+  },
+  {
+    "image": "R3-29.jpg",
+    "description": "Commercial beverage dispenser (soda fountain) machine.",
+    "problems_solved": "Servicing beverage dispensing equipment.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Cold-Side Equipment / Beverage)"
+  },
+  {
+    "image": "R3-30.jpg",
+    "description": "Extremely dirty, collapsed, and neglected HVAC air filters.",
+    "problems_solved": "Replacing failed filters that cause severe airflow restriction and system damage.",
+    "service_mapping": "4. Preventive Maintenance Programs (HVAC Maintenance)"
+  },
+  {
+    "image": "R3-31.jpg",
+    "description": "Motor shaft and housing completely caked in hardened grease and dust.",
+    "problems_solved": "Deep cleaning and unseizing mechanical parts to restore functionality.",
+    "service_mapping": "4. Preventive Maintenance Programs (Early Detection)"
+  },
+  {
+    "image": "R3-32.jpg",
+    "description": "Small condenser coil unit pulled out for inspection, covered in dust.",
+    "problems_solved": "Cleaning coils to restore efficiency and prevent compressor failure.",
+    "service_mapping": "4. Preventive Maintenance Programs (Refrigeration Maintenance)"
+  },
+  {
+    "image": "R3-33.jpg",
+    "description": "Rooftop exhaust fan (mushroom fan) typical for restaurant exhaust hoods.",
+    "problems_solved": "Repairing or maintaining critical kitchen ventilation to remove smoke and grease.",
+    "service_mapping": "1. Commercial HVAC Services (Ventilation equipment)"
+  },
+  {
+    "image": "R3-34.jpg",
+    "description": "Stainless steel wire mesh conveyor belt for a commercial oven.",
+    "problems_solved": "Repairing or replacing damaged conveyor belts in high-volume ovens.",
+    "service_mapping": "2. Commercial Kitchen Equipment (Hot-Side Equipment)"
+  }
+]
