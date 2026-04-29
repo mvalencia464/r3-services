@@ -1,0 +1,79 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
+import AboutSection from '../components/AboutSection.astro';
+import ReviewsSection from '../components/ReviewsSection.astro';
+import ContactSection from '../components/ContactSection.astro';
+import MapSection from '../components/MapSection.astro';
+import ProcessSteps from '../components/ProcessSteps.astro';
+import FAQSection from '../components/FAQSection.astro';
+import Footer from '../components/Footer.astro';
+import SplitFeature from '../components/SplitFeature.astro';
+import RecentWork from '../components/RecentWork.astro';
+
+const roofProcessSteps = [
+  { title: 'Book Inspection', description: 'Schedule a free roof inspection with a local roofing specialist.' },
+  { title: 'Get Clear Scope', description: 'We provide photos, findings, and a straightforward recommendation with pricing.' },
+  { title: 'Roof Work Begins', description: 'Our crew completes repairs or replacement using code-aware installation practices.' },
+  { title: 'Final Walkthrough', description: 'We review finished work, clean the site, and confirm your warranty details.' },
+];
+
+const transformationGalleryProjects = [
+  { title: 'Historic Red Tile Repair', category: 'Tile Restoration', image: 'https://media.stokeleads.com/roofing/pexels-guvo59-31762405.avif' },
+  { title: 'Precision Shingle Installation', category: 'Full Replacement', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33404248.avif' },
+  { title: 'Residential Leak Detection', category: 'Emergency Repair', image: 'https://media.stokeleads.com/roofing/pexels-cmoon-12558933.avif' },
+  { title: 'Modern Slate-Tile Upgrade', category: 'Tile Roofing', image: 'https://media.stokeleads.com/roofing/pexels-ennis-zhu-511510942-16209099.avif' },
+  { title: 'Shingle Maintenance & Prep', category: 'Maintenance', image: 'https://media.stokeleads.com/roofing/pexels-ninobur-15964928.avif' },
+  { title: 'Comprehensive Roof Overhaul', category: 'Roof Ventilation', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33404981.avif' },
+  { title: 'Advanced Leak-Barrier System', category: 'Underlayment', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33501308.avif' },
+  { title: 'New Shingle Roof Install', category: 'Shingle Roofing', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33404080.avif' },
+  { title: 'Decking & Structural Repair', category: 'Structural Repair', image: 'https://media.stokeleads.com/roofing/SCR-20260428-gplb-3.avif' },
+  { title: 'Aerial Neighborhood Portfolio', category: 'Shingle Roofing', image: 'https://media.stokeleads.com/roofing/pexels-chris-the-island-3570397-32270941.avif' },
+  { title: 'Modern Tile Leak Resolution', category: 'Tile Repair', image: 'https://media.stokeleads.com/roofing/pexels-quang-nguyen-vinh-222549-14776839.avif' },
+  { title: 'Expert Claims Inspection', category: 'Insurance Support', image: 'https://media.stokeleads.com/roofing/SCR-20260428-mkqy.avif' },
+];
+
+---
+
+<BaseLayout>
+  <Header />
+  <main>
+    <Hero />
+    <ServicesGrid />
+    <section class="section">
+      <div class="container">
+        <SplitFeature
+          eyebrow="Fast Estimate Promise"
+          title="Free Roof Estimates With a Less-Than-24-Hour Turnaround"
+          description="Share your roof issue and our team will review your request quickly, then follow up with clear next steps in under 24 hours."
+          image="https://media.stokeleads.com/roofing/pexels-rstephens-33501308.avif"
+          buttonText="Request My Free Estimate"
+          buttonHref="#contact"
+        />
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <ProcessSteps
+          steps={roofProcessSteps}
+          title="Our Roofing Process"
+          subtitle="A simple four-step system designed for fast decisions, clean execution, and reliable Florida roof performance."
+        />
+      </div>
+    </section>
+    <AboutSection />
+    <section class="section">
+      <div class="container">
+        <RecentWork projects={transformationGalleryProjects} />
+      </div>
+    </section>
+    <ReviewsSection />
+    <FAQSection />
+    <ContactSection />
+    <MapSection />
+  </main>
+  <Footer />
+</BaseLayout>

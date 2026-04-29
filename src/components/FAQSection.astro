@@ -1,0 +1,84 @@
+---
+import { SITE } from '../config/site';
+
+const faqs = [
+  {
+    question: "Do you offer financing for roof replacement or major repairs?",
+    answer:
+      "Yes. We offer financing options for qualified homeowners, including plans designed for full roof replacement and larger storm-restoration scopes.",
+  },
+  {
+    question: "How fast can you respond to an active roof leak?",
+    answer:
+      "Emergency calls are prioritized. In most service areas, we can dispatch quickly for temporary protection and schedule permanent repair as soon as materials and weather allow.",
+  },
+  {
+    question: "Can you help with insurance claims after storm damage?",
+    answer:
+      "Absolutely. We provide inspection photos, damage documentation, and scope notes homeowners can share directly with their insurance adjuster.",
+  },
+  {
+    question: "What roofing systems do you work on?",
+    answer:
+      "We service and install asphalt shingle, tile, metal, and select low-slope residential roof systems common across Florida.",
+  },
+  {
+    question: "Do you provide free roof inspections?",
+    answer:
+      `Yes. We provide free initial inspections and clear recommendations before work begins across ${SITE.serviceAreas.slice(0, 4).join(", ")} and nearby markets.`,
+  },
+  {
+    question: "How long does a typical roof replacement take?",
+    answer:
+      "Most standard residential replacements are completed in one to three days depending on roof size, material type, weather, and decking condition.",
+  },
+];
+---
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2>Roofing Questions, Answered</h2>
+      <p>Clear answers on financing, timelines, and what to expect before your project starts.</p>
+    </div>
+
+    <div class="faq-list">
+      {faqs.map((faq) => (
+        <details class="faq-item">
+          <summary>{faq.question}</summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-list {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--panel);
+    padding: 0.95rem 1.1rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .faq-item p {
+    margin-top: 0.65rem;
+    color: var(--muted);
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+</style>
