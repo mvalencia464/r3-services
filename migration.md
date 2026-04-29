@@ -71,4 +71,3 @@
 - Work config-first (update `site.ts` first) to leverage existing component auto-binding and reduce duplicated edits.
 - Then patch component/page-level hardcoded roofing copy where config indirection is not used.
 - Run a final content grep pass for terms like `roof`, `roofing`, `storm`, and stale company names before sign-off.
-
