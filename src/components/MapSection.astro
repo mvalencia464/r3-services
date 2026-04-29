@@ -1,10 +1,10 @@
 ---
 import { SITE } from '../config/site';
-import { r2img } from '../lib/r2';
 
 const mapQuery = encodeURIComponent(`${SITE.address}, ${SITE.city}, ${SITE.state}`);
 const mapsKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY as string | undefined;
 const mapId = import.meta.env.PUBLIC_GOOGLE_MAP_ID as string | undefined;
+const osmMapQuery = encodeURIComponent(`${SITE.city}, ${SITE.state}, USA`);
 
 const staticMapStyles = [
   'feature:all|element:labels.text.fill|color:0xf5f5f6',
@@ -21,9 +21,11 @@ const staticStyleQuery = staticMapStyles
   .map((style) => `style=${encodeURIComponent(style)}`)
   .join('&');
 
+const staticMapFallbackSrc = `https://staticmap.openstreetmap.de/staticmap.php?center=${osmMapQuery}&zoom=10&size=1280x640&markers=${osmMapQuery},red-pushpin`;
+
 const staticMapSrc = mapsKey
   ? `https://maps.googleapis.com/maps/api/staticmap?center=${mapQuery}&zoom=9&size=1280x640&scale=2&maptype=roadmap&markers=color:0xE31E24%7C${mapQuery}${mapId ? `&map_id=${mapId}` : `&${staticStyleQuery}`}&key=${mapsKey}`
-  : r2img(SITE.map.image);
+  : staticMapFallbackSrc;
 
 const embedMapSrc = mapsKey
   ? `https://www.google.com/maps/embed/v1/place?key=${mapsKey}&q=${mapQuery}&zoom=9${mapId ? `&map_id=${mapId}` : ''}`
@@ -54,8 +56,8 @@ const embedMapSrc = mapsKey
           <button type="button" class="map-card__trigger" data-map-trigger aria-label="Load interactive Google Map">
             <img
               src={staticMapSrc}
-              data-fallback-src={r2img(SITE.map.image)}
-              alt="Static map preview of Clearwater service area"
+              data-fallback-src={staticMapFallbackSrc}
+              alt="Static map preview of Brandon service area"
               loading="lazy"
               width="1280"
               height="640"
