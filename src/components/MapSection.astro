@@ -7,14 +7,14 @@ const mapsKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY as string | undefined
 const mapId = import.meta.env.PUBLIC_GOOGLE_MAP_ID as string | undefined;
 
 const staticMapStyles = [
-  'feature:all|element:labels.text.fill|color:0xf2f7ff',
-  'feature:all|element:labels.text.stroke|color:0x0a1428',
-  'feature:road|element:geometry|color:0x1e335d',
-  'feature:water|element:geometry|color:0x122447',
-  'feature:landscape|element:geometry|color:0x0b1833',
+  'feature:all|element:labels.text.fill|color:0xf5f5f6',
+  'feature:all|element:labels.text.stroke|color:0x0b0b0d',
+  'feature:road|element:geometry|color:0x2a2a30',
+  'feature:water|element:geometry|color:0x1b1b20',
+  'feature:landscape|element:geometry|color:0x121216',
   'feature:poi|element:all|visibility:off',
   'feature:transit|element:all|visibility:off',
-  'feature:administrative|element:geometry.stroke|color:0x274779',
+  'feature:administrative|element:geometry.stroke|color:0xE31E24',
 ];
 
 const staticStyleQuery = staticMapStyles
@@ -22,7 +22,7 @@ const staticStyleQuery = staticMapStyles
   .join('&');
 
 const staticMapSrc = mapsKey
-  ? `https://maps.googleapis.com/maps/api/staticmap?center=${mapQuery}&zoom=9&size=1280x640&scale=2&maptype=roadmap&markers=color:0xff6b35%7C${mapQuery}${mapId ? `&map_id=${mapId}` : `&${staticStyleQuery}`}&key=${mapsKey}`
+  ? `https://maps.googleapis.com/maps/api/staticmap?center=${mapQuery}&zoom=9&size=1280x640&scale=2&maptype=roadmap&markers=color:0xE31E24%7C${mapQuery}${mapId ? `&map_id=${mapId}` : `&${staticStyleQuery}`}&key=${mapsKey}`
   : r2img(SITE.map.image);
 
 const embedMapSrc = mapsKey
@@ -41,7 +41,7 @@ const embedMapSrc = mapsKey
     <div class="map-layout">
       <aside class="areas-panel">
         <h3>Areas Served</h3>
-        <p>From Clearwater outward, our crews cover key residential markets across Florida.</p>
+        <p>From Brandon outward, our team covers high-priority commercial corridors across the region.</p>
         <ul class="areas-list">
           {SITE.serviceAreas.map((area) => (
             <li>{area}</li>
@@ -67,7 +67,7 @@ const embedMapSrc = mapsKey
 
           <iframe
             class="map-card__frame"
-            title="Google Map showing Sunwave Roofing in Clearwater, Florida"
+            title="Google Map showing R3 Services in Brandon, Florida"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
@@ -154,7 +154,7 @@ const embedMapSrc = mapsKey
   .areas-list li {
     color: var(--text);
     font-size: 0.85rem;
-    border: 1px solid rgba(149, 176, 255, 0.28);
+    border: 1px solid rgba(227, 30, 36, 0.28);
     border-radius: 999px;
     padding: 0.35rem 0.6rem;
     background: rgba(255, 255, 255, 0.01);

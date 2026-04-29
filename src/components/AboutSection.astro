@@ -17,13 +17,7 @@ import { r2img } from '../lib/r2';
           height="440"
         />
         <div class="about__overlay-badge">
-          <img
-            src={r2img('https://media.stokeleads.com/roofing/light-logo.avif')}
-            alt={SITE.name}
-            loading="lazy"
-            width="120"
-            height="32"
-          />
+          <span class="about__brand-text">{SITE.name}</span>
           <div class="about__overlay-copy">
             <strong>{SITE.owner.name}</strong>
             <span>{SITE.owner.role}</span>
@@ -111,19 +105,17 @@ import { r2img } from '../lib/r2';
     align-items: center;
     gap: 0.65rem;
     padding: 0.55rem 0.7rem;
-    border: 1px solid rgba(149, 176, 255, 0.35);
+    border: 1px solid rgba(227, 30, 36, 0.4);
     border-radius: 10px;
     background: rgba(8, 18, 37, 0.78);
     backdrop-filter: blur(6px);
   }
 
-  .about__overlay-badge img {
-    width: 92px;
-    height: auto;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-    border: 0;
+  .about__brand-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.08em;
+    color: var(--text);
     flex-shrink: 0;
   }
 
@@ -245,7 +237,7 @@ import { r2img } from '../lib/r2';
   }
 
   .area-tag {
-    background: rgba(91, 196, 232, 0.08);
+    background: rgba(227, 30, 36, 0.12);
     color: var(--text);
     border: 1px solid var(--border);
     font-size: 0.8rem;

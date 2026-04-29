@@ -23,9 +23,7 @@ import HeroEstimateForm from './HeroEstimateForm.astro';
         ))}
       </div>
 
-      <h1 class="hero__heading fade-up fade-up--2">
-        <span class="text-shimmer">{SITE.hero.heading}</span>
-      </h1>
+      <h1 class="hero__heading fade-up fade-up--2">{SITE.hero.heading}</h1>
 
       <p class="hero__sub fade-up fade-up--3">
         {SITE.hero.subheading}
@@ -58,13 +56,13 @@ import HeroEstimateForm from './HeroEstimateForm.astro';
         <p><strong>4.9/5 Rating</strong> on Google & FB</p>
       </div>
       <div class="trust-item">
-        <p><strong>20+ Years</strong> Florida Roofing Experience</p>
+        <p><strong>Commercial Focus</strong> Restaurants & Foodservice</p>
       </div>
       <div class="trust-item">
-        <p><strong>7,200+</strong> Roof Projects Completed</p>
+        <p><strong>Multi-System Support</strong> HVAC, Refrigeration, Equipment</p>
       </div>
       <div class="trust-item">
-        <p><strong>24/7</strong> Storm Response Team</p>
+        <p><strong>Priority Dispatch</strong> for Critical Failures</p>
       </div>
     </div>
   </div>
@@ -77,8 +75,8 @@ import HeroEstimateForm from './HeroEstimateForm.astro';
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #0b1530;
-    background-image: linear-gradient(165deg, #0d1a36 0%, #0a142a 55%, #12264f 100%);
+    background-color: #121215;
+    background-image: linear-gradient(165deg, #15151a 0%, #111114 55%, #1f1f25 100%);
     padding-top: 5rem;
     overflow: hidden;
   }
@@ -97,9 +95,9 @@ import HeroEstimateForm from './HeroEstimateForm.astro';
     inset: 0;
     background: linear-gradient(
       135deg,
-      rgba(10, 19, 40, 0.95) 0%,
-      rgba(14, 27, 54, 0.9) 46%,
-      rgba(57, 229, 197, 0.16) 100%
+      rgba(12, 12, 15, 0.95) 0%,
+      rgba(16, 16, 21, 0.9) 46%,
+      rgba(227, 30, 36, 0.24) 100%
     );
     z-index: 1;
   }
@@ -128,9 +126,9 @@ import HeroEstimateForm from './HeroEstimateForm.astro';
   }
 
   .badge {
-    background: rgba(91, 196, 232, 0.08);
+    background: rgba(227, 30, 36, 0.13);
     border: 1px solid var(--border);
-    color: var(--accent2);
+    color: #ff9a9d;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
@@ -174,7 +172,7 @@ import HeroEstimateForm from './HeroEstimateForm.astro';
   .hero__form-wrap {
     position: relative;
     background:
-      linear-gradient(160deg, rgba(22, 38, 73, 0.92), rgba(13, 25, 50, 0.92));
+      linear-gradient(160deg, rgba(28, 28, 33, 0.95), rgba(18, 18, 22, 0.95));
     border: 1px solid var(--border);
     border-radius: 14px;
     overflow: hidden;
@@ -190,7 +188,7 @@ import HeroEstimateForm from './HeroEstimateForm.astro';
     width: 100%;
     height: 3px;
     border-radius: 14px 14px 0 0;
-    background: linear-gradient(90deg, rgba(57, 229, 197, 0.92), rgba(57, 229, 197, 0.22));
+    background: linear-gradient(90deg, rgba(227, 30, 36, 0.92), rgba(227, 30, 36, 0.2));
   }
 
   /* Trust Bar Styling */
@@ -199,7 +197,7 @@ import HeroEstimateForm from './HeroEstimateForm.astro';
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(13, 24, 48, 0.82);
+    background: rgba(11, 11, 14, 0.86);
     backdrop-filter: blur(12px);
     border-top: 1px solid var(--border);
     z-index: 3;

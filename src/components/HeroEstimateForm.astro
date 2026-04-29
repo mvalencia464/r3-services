@@ -5,12 +5,12 @@ import { r2img } from '../lib/r2';
 
 <form class="estimate-form" name="hero-estimate" method="POST" action="/thanks">
   <input type="hidden" name="form-name" value="hero-estimate" />
-  <h3 class="estimate-form__title">Claim Your Free Roof Estimate Today</h3>
-  <p class="estimate-form__copy">Tell us where the project is located and we will follow up with your free estimate in less than 24 hours.</p>
+  <h3 class="estimate-form__title">Request Priority Commercial Service</h3>
+  <p class="estimate-form__copy">Tell us where your facility is located and what system needs support. We will follow up in less than 24 hours.</p>
   <input class="estimate-form__field" type="text" name="name" placeholder="Full Name" required aria-label="Full Name" />
   <input class="estimate-form__field" type="tel" name="phone" placeholder="Phone Number" required aria-label="Phone Number" />
   <input class="estimate-form__field" type="email" name="email" placeholder="Email Address" required aria-label="Email Address" />
-  <input class="estimate-form__field" type="text" name="address" placeholder="Property Address" required aria-label="Property Address" />
+  <input class="estimate-form__field" type="text" name="address" placeholder="Business Address" required aria-label="Business Address" />
   <label class="estimate-form__checkbox">
     <input type="checkbox" name="consent_project_sms" required />
     <span>
@@ -25,9 +25,9 @@ import { r2img } from '../lib/r2';
       I consent to recurring marketing texts from {SITE.name}. Consent is not required to purchase. Reply STOP to opt out.
     </span>
   </label>
-  <button type="submit" class="btn btn--primary estimate-form__submit">Request Estimate</button>
+  <button type="submit" class="btn btn--primary estimate-form__submit">Request Service</button>
   <div class="estimate-form__contact">
-    <img src={r2img('https://media.stokeleads.com/roofing/SCR-20260428-myau-4.avif')} alt={`${SITE.owner.name}, owner of ${SITE.name}`} loading="lazy" width="34" height="34" />
+    <img src={r2img('https://media.stokeleads.com/r3-services/R3-23.avif')} alt={`${SITE.owner.name}, owner of ${SITE.name}`} loading="lazy" width="34" height="34" />
     <div class="estimate-form__contact-copy">
       <strong>{SITE.owner.name}</strong>
       <span>will contact you directly</span>
@@ -43,7 +43,7 @@ import { r2img } from '../lib/r2';
     padding: 1.35rem 1.2rem 1.2rem;
     position: relative;
     z-index: 1;
-    background: linear-gradient(160deg, rgba(22, 38, 73, 0.92), rgba(13, 25, 50, 0.92));
+    background: linear-gradient(160deg, rgba(28, 28, 33, 0.95), rgba(18, 18, 22, 0.95));
     border: 1px solid var(--border);
     border-radius: 14px;
     box-shadow: 0 22px 44px rgba(6, 12, 24, 0.45);
@@ -58,7 +58,7 @@ import { r2img } from '../lib/r2';
     width: 100%;
     height: 3px;
     border-radius: 14px 14px 0 0;
-    background: linear-gradient(90deg, rgba(57, 229, 197, 0.92), rgba(57, 229, 197, 0.22));
+    background: linear-gradient(90deg, rgba(227, 30, 36, 0.92), rgba(227, 30, 36, 0.2));
     pointer-events: none;
   }
 
@@ -79,7 +79,7 @@ import { r2img } from '../lib/r2';
     width: 100%;
     border: 1px solid var(--border);
     border-radius: 8px;
-    background: rgba(8, 16, 34, 0.72);
+    background: rgba(20, 20, 25, 0.84);
     color: var(--text);
     font-family: 'DM Sans', sans-serif;
     font-size: 0.92rem;
@@ -89,9 +89,9 @@ import { r2img } from '../lib/r2';
 
   .estimate-form__field:focus {
     outline: none;
-    border-color: var(--accent2);
-    background: rgba(10, 24, 48, 0.9);
-    box-shadow: 0 0 0 3px rgba(57, 229, 197, 0.18);
+    border-color: var(--accent);
+    background: rgba(28, 28, 35, 0.95);
+    box-shadow: 0 0 0 3px rgba(227, 30, 36, 0.2);
   }
 
   .estimate-form__checkbox {
@@ -118,13 +118,13 @@ import { r2img } from '../lib/r2';
   .estimate-form__submit {
     width: 100%;
     border-radius: 9px;
-    background: linear-gradient(135deg, var(--accent) 0%, #ff884f 100%);
-    box-shadow: 0 12px 24px rgba(255, 107, 53, 0.28);
+    background: linear-gradient(135deg, var(--accent) 0%, #c5171c 100%);
+    box-shadow: 0 12px 24px rgba(227, 30, 36, 0.28);
   }
 
   .estimate-form__submit:hover {
-    background: linear-gradient(135deg, #ff7a46 0%, #ff9964 100%);
-    box-shadow: 0 14px 28px rgba(255, 122, 70, 0.35);
+    background: linear-gradient(135deg, #ef3339 0%, #d61c22 100%);
+    box-shadow: 0 14px 28px rgba(227, 30, 36, 0.35);
   }
 
   .estimate-form__contact {
@@ -133,9 +133,9 @@ import { r2img } from '../lib/r2';
     align-items: center;
     gap: 0.55rem;
     padding: 0.65rem 0.7rem;
-    border: 1px solid rgba(149, 176, 255, 0.22);
+    border: 1px solid rgba(227, 30, 36, 0.24);
     border-radius: 9px;
-    background: rgba(8, 18, 37, 0.46);
+    background: rgba(18, 18, 22, 0.7);
   }
 
   .estimate-form__contact img {

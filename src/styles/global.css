@@ -18,8 +18,8 @@ body {
   line-height: 1.6;
   color: var(--text);
   background:
-    radial-gradient(120% 90% at 10% 0%, rgba(56, 102, 210, 0.2) 0%, rgba(56, 102, 210, 0) 45%),
-    linear-gradient(180deg, #060d1c 0%, var(--deep) 45%, #081229 100%);
+    radial-gradient(120% 90% at 10% 0%, rgba(227, 30, 36, 0.18) 0%, rgba(227, 30, 36, 0) 45%),
+    linear-gradient(180deg, #080809 0%, var(--deep) 45%, #111114 100%);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -101,7 +101,7 @@ img {
 }
 
 .btn--primary:hover {
-  background: var(--accent2);
+  background: #f33f45;
 }
 
 .btn--outline {
@@ -169,7 +169,7 @@ img {
 
 .u-hover-lift:hover {
   transform: translateY(-3px);
-  border-color: rgba(91, 196, 232, 0.45);
+  border-color: rgba(227, 30, 36, 0.55);
   box-shadow: 0 22px 44px rgba(0, 0, 0, 0.35);
 }
 
@@ -194,7 +194,7 @@ img {
 }
 
 .text-shimmer {
-  background: linear-gradient(120deg, var(--text) 0%, var(--text) 38%, var(--accent2) 48%, var(--text) 58%, var(--text) 100%);
+  background: linear-gradient(120deg, var(--text) 0%, var(--text) 38%, var(--accent) 48%, var(--text) 58%, var(--text) 100%);
   background-size: 220% 100%;
   color: transparent;
   -webkit-background-clip: text;
@@ -203,7 +203,7 @@ img {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent2);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 

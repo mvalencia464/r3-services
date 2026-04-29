@@ -8,11 +8,11 @@ import { SITE } from '../config/site';
     <div class="footer__brand">
       <img
         class="footer__logo"
-        src="https://media.stokeleads.com/roofing/light-logo.avif"
+        src="https://media.stokeleads.com/r3-services/logo.avif"
         alt={SITE.name}
         loading="lazy"
         width="420"
-        height="110"
+        height="140"
       />
       <p class="footer__tagline">{SITE.tagline}</p>
       <p class="footer__copy">{SITE.footerText}</p>
@@ -33,10 +33,9 @@ import { SITE } from '../config/site';
         {SITE.navLinks.map(link => (
           <a href={link.href} class="footer__link">{link.label}</a>
         ))}
-        <a href="/financing" class="footer__link">Financing</a>
-        <a href="/insurance-claims" class="footer__link">Insurance Claims</a>
+        <a href="/library" class="footer__link">Resources</a>
+        <a href="/hiring" class="footer__link">Careers</a>
         <a href="/terms" class="footer__link">Terms</a>
-        <a href="/hiring" class="footer__link">Hiring</a>
         <a href="/policy" class="footer__link">Privacy</a>
       </nav>
     </div>
@@ -45,7 +44,7 @@ import { SITE } from '../config/site';
 
 <style>
   .footer {
-    background: linear-gradient(160deg, #0d1f3d 0%, #0b1833 55%, #11284e 100%);
+    background: linear-gradient(160deg, #151519 0%, #101014 55%, #1a1a20 100%);
     padding: 2rem 0 4rem; /* bottom padding for mobile sticky CTA */
     border-top: 1px solid var(--border);
   }
@@ -58,7 +57,7 @@ import { SITE } from '../config/site';
   }
 
   .footer__logo {
-    width: clamp(96px, 11vw, 130px);
+    width: clamp(86px, 8vw, 110px);
     height: auto;
     display: block;
     margin-bottom: 0.35rem;

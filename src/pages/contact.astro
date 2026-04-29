@@ -8,18 +8,16 @@ import MapSection from '../components/MapSection.astro';
 import { SITE } from '../config/site';
 
 const teamMembers = [
-  { name: 'Miguel Alvarez', role: 'Owner / Licensed Contractor', image: 'https://media.stokeleads.com/roofing/miguel.avif' },
-  { name: 'Khilo Ramirez', role: 'Customer Care Lead', image: 'https://media.stokeleads.com/roofing/khilo.avif' },
-  { name: 'Joel Jacobsen', role: 'Project Manager', image: 'https://media.stokeleads.com/roofing/SCR-20260428-mkqy.avif' },
-  { name: 'Daniel Ortega', role: 'Lead Installer', image: 'https://media.stokeleads.com/roofing/SCR-20260428-mksa.avif' },
-  { name: 'Mariana Soto', role: 'Site Supervisor', image: 'https://media.stokeleads.com/roofing/SCR-20260428-mksx.avif' },
-  { name: 'Hank Richardson', role: 'Production Coordinator', image: 'https://media.stokeleads.com/roofing/SCR-20260428-mkun.avif' },
+  { name: 'Nathaniel Roddy', role: 'Owner / Service Lead', image: 'https://media.stokeleads.com/r3-services/R3-23.avif' },
+  { name: 'Field Diagnostics Team', role: 'HVAC & Refrigeration Support', image: 'https://media.stokeleads.com/r3-services/R3-24.avif' },
+  { name: 'Equipment Service Team', role: 'Hot-Side & Cold-Side Repair', image: 'https://media.stokeleads.com/r3-services/R3-8.avif' },
+  { name: 'Preventive Maintenance Team', role: 'Inspection & Performance Programs', image: 'https://media.stokeleads.com/r3-services/R3-30.avif' },
 ];
 ---
 
 <BaseLayout
-  title={`Contact ${SITE.name} | Free Roof Estimate`}
-  description={`Contact ${SITE.name} for a free roof estimate, emergency leak response, and full roofing support across Florida.`}
+  title={`Contact ${SITE.name} | Commercial Service Request`}
+  description={`Contact ${SITE.name} for commercial HVAC, refrigeration, and kitchen equipment service support.`}
 >
   <Header />
 
@@ -27,9 +25,9 @@ const teamMembers = [
     <section class="section contact-hero">
       <div class="container">
         <span class="section-label">Standalone Contact Page</span>
-        <h1>Talk to a Roofing Specialist Today</h1>
+        <h1>Talk to a Commercial Service Specialist Today</h1>
         <p>
-          Call now for urgent issues or submit a free estimate request. Our local team
+          Call now for urgent system issues or submit a service request. Our local team
           follows up quickly with clear next steps.
         </p>
         <div class="contact-hero__actions">
@@ -43,7 +41,7 @@ const teamMembers = [
 
     <section class="section section--alt">
       <div class="container">
-        <TeamGrid members={teamMembers} title="Meet the Team Behind Your Project" />
+        <TeamGrid members={teamMembers} title="Meet the Team Behind Your Service Program" />
       </div>
     </section>
 

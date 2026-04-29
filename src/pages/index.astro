@@ -14,26 +14,26 @@ import Footer from '../components/Footer.astro';
 import SplitFeature from '../components/SplitFeature.astro';
 import RecentWork from '../components/RecentWork.astro';
 
-const roofProcessSteps = [
-  { title: 'Book Inspection', description: 'Schedule a free roof inspection with a local roofing specialist.' },
-  { title: 'Get Clear Scope', description: 'We provide photos, findings, and a straightforward recommendation with pricing.' },
-  { title: 'Roof Work Begins', description: 'Our crew completes repairs or replacement using code-aware installation practices.' },
-  { title: 'Final Walkthrough', description: 'We review finished work, clean the site, and confirm your warranty details.' },
+const serviceProcessSteps = [
+  { title: 'Call or Submit Request', description: 'Share your location, system type, and issue details with our team.' },
+  { title: 'Diagnostic Visit', description: 'We inspect equipment, identify root causes, and provide practical recommendations.' },
+  { title: 'Repair or Service Execution', description: 'Approved work is completed with a focus on uptime, safety, and consistency.' },
+  { title: 'Performance Follow-Up', description: 'We review outcomes and recommend maintenance intervals to reduce repeat failures.' },
 ];
 
 const transformationGalleryProjects = [
-  { title: 'Historic Red Tile Repair', category: 'Tile Restoration', image: 'https://media.stokeleads.com/roofing/pexels-guvo59-31762405.avif' },
-  { title: 'Precision Shingle Installation', category: 'Full Replacement', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33404248.avif' },
-  { title: 'Residential Leak Detection', category: 'Emergency Repair', image: 'https://media.stokeleads.com/roofing/pexels-cmoon-12558933.avif' },
-  { title: 'Modern Slate-Tile Upgrade', category: 'Tile Roofing', image: 'https://media.stokeleads.com/roofing/pexels-ennis-zhu-511510942-16209099.avif' },
-  { title: 'Shingle Maintenance & Prep', category: 'Maintenance', image: 'https://media.stokeleads.com/roofing/pexels-ninobur-15964928.avif' },
-  { title: 'Comprehensive Roof Overhaul', category: 'Roof Ventilation', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33404981.avif' },
-  { title: 'Advanced Leak-Barrier System', category: 'Underlayment', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33501308.avif' },
-  { title: 'New Shingle Roof Install', category: 'Shingle Roofing', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33404080.avif' },
-  { title: 'Decking & Structural Repair', category: 'Structural Repair', image: 'https://media.stokeleads.com/roofing/SCR-20260428-gplb-3.avif' },
-  { title: 'Aerial Neighborhood Portfolio', category: 'Shingle Roofing', image: 'https://media.stokeleads.com/roofing/pexels-chris-the-island-3570397-32270941.avif' },
-  { title: 'Modern Tile Leak Resolution', category: 'Tile Repair', image: 'https://media.stokeleads.com/roofing/pexels-quang-nguyen-vinh-222549-14776839.avif' },
-  { title: 'Expert Claims Inspection', category: 'Insurance Support', image: 'https://media.stokeleads.com/roofing/SCR-20260428-mkqy.avif' },
+  { title: 'Rooftop HVAC Unit Service', category: 'Commercial HVAC', image: 'https://media.stokeleads.com/r3-services/R3-12.avif' },
+  { title: 'Split-System Diagnostics', category: 'Commercial HVAC', image: 'https://media.stokeleads.com/r3-services/R3-19.avif' },
+  { title: 'Walk-In Refrigeration Support', category: 'Refrigeration', image: 'https://media.stokeleads.com/r3-services/R3-15.avif' },
+  { title: 'Prep Rail Temperature Recovery', category: 'Refrigeration', image: 'https://media.stokeleads.com/r3-services/R3-22.avif' },
+  { title: 'Conveyor Oven Service', category: 'Kitchen Equipment', image: 'https://media.stokeleads.com/r3-services/R3-8.avif' },
+  { title: 'Ignition Component Replacement', category: 'Kitchen Equipment', image: 'https://media.stokeleads.com/r3-services/R3-26.avif' },
+  { title: 'Motor and Airflow Repairs', category: 'Ventilation', image: 'https://media.stokeleads.com/r3-services/R3-27.avif' },
+  { title: 'Electrical Load Diagnostics', category: 'Diagnostics', image: 'https://media.stokeleads.com/r3-services/R3-23.avif' },
+  { title: 'Deep Coil Cleaning Program', category: 'Preventive Maintenance', image: 'https://media.stokeleads.com/r3-services/R3-2.avif' },
+  { title: 'Filter Replacement Service', category: 'Preventive Maintenance', image: 'https://media.stokeleads.com/r3-services/R3-30.avif' },
+  { title: 'Component Reliability Checks', category: 'Preventive Maintenance', image: 'https://media.stokeleads.com/r3-services/R3-31.avif' },
+  { title: 'Scheduled PM Execution', category: 'Preventive Maintenance', image: 'https://media.stokeleads.com/r3-services/R3-32.avif' },
 ];
 
 ---
@@ -46,11 +46,11 @@ const transformationGalleryProjects = [
     <section class="section">
       <div class="container">
         <SplitFeature
-          eyebrow="Fast Estimate Promise"
-          title="Free Roof Estimates With a Less-Than-24-Hour Turnaround"
-          description="Share your roof issue and our team will review your request quickly, then follow up with clear next steps in under 24 hours."
-          image="https://media.stokeleads.com/roofing/pexels-rstephens-33501308.avif"
-          buttonText="Request My Free Estimate"
+          eyebrow="Fast Service Triage"
+          title="Commercial Service Requests Reviewed in Under 24 Hours"
+          description="Share your system issue and facility details. Our team responds with clear next steps built around operational urgency."
+          image="https://media.stokeleads.com/r3-services/truck.avif"
+          buttonText="Request Service Support"
           buttonHref="#contact"
         />
       </div>
@@ -58,9 +58,9 @@ const transformationGalleryProjects = [
     <section class="section">
       <div class="container">
         <ProcessSteps
-          steps={roofProcessSteps}
-          title="Our Roofing Process"
-          subtitle="A simple four-step system designed for fast decisions, clean execution, and reliable Florida roof performance."
+          steps={serviceProcessSteps}
+          title="Our Commercial Service Process"
+          subtitle="A practical four-step workflow designed to restore uptime and keep critical systems reliable."
         />
       </div>
     </section>

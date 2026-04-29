@@ -21,10 +21,10 @@ const { service } = Astro.props;
 // Related services (exclude current)
 const related = SITE.services.filter(s => s.slug !== service.slug).slice(0, 3);
 const pageSteps = [
-  { title: 'Inspection & Photos', description: `We inspect your roof and document key findings tied to ${service.title.toLowerCase()}.` },
-  { title: 'Scope & Estimate', description: 'You get a clear scope of work, timeline, and material options with no pressure.' },
-  { title: 'Roofing Work', description: 'Our licensed crew performs the approved work with code-aware installation standards.' },
-  { title: 'Walkthrough & Warranty', description: 'We verify completion, clean up, and review warranty and maintenance guidance.' },
+  { title: 'Diagnostic Assessment', description: `We inspect system conditions tied to ${service.title.toLowerCase()} and identify root causes.` },
+  { title: 'Clear Service Plan', description: 'You receive a practical scope, timeline, and prioritized next steps.' },
+  { title: 'Repair or Maintenance Execution', description: 'Our technicians complete approved work with safety and uptime in mind.' },
+  { title: 'Performance Review', description: 'We confirm operation and share maintenance guidance to reduce repeat failures.' },
 ];
 const pageTestimonials = SITE.reviews.slice(0, 3).map((item) => ({
   name: item.name,
@@ -33,22 +33,22 @@ const pageTestimonials = SITE.reviews.slice(0, 3).map((item) => ({
   rating: item.stars,
 }));
 const showcaseProjects = [
-  { title: 'Storm-Damage Roof Recovery', category: 'Restoration', image: 'https://media.stokeleads.com/roofing/pexels-guvo59-31762405.avif' },
-  { title: 'Architectural Shingle Upgrade', category: 'Replacement', image: 'https://media.stokeleads.com/roofing/pexels-rstephens-33404248.avif' },
-  { title: 'Leak-Stop Repair Project', category: 'Repair', image: 'https://media.stokeleads.com/roofing/pexels-cmoon-12558933.avif' },
+  { title: 'RTU Service and Stabilization', category: 'Commercial HVAC', image: 'https://media.stokeleads.com/r3-services/R3-12.avif' },
+  { title: 'Walk-In Temperature Recovery', category: 'Refrigeration', image: 'https://media.stokeleads.com/r3-services/R3-28.avif' },
+  { title: 'Kitchen Equipment Diagnostics', category: 'Equipment Repair', image: 'https://media.stokeleads.com/r3-services/R3-21.avif' },
 ];
 const serviceFaqs = [
   {
-    q: `How quickly can you schedule ${service.title.toLowerCase()} in Florida?`,
+    q: `How quickly can you schedule ${service.title.toLowerCase()} service?`,
     a: `Most projects start with a fast inspection window. Emergency cases are prioritized, and planned work is scheduled based on material availability and permits.`,
   },
   {
-    q: "Do you help with insurance documentation after storm damage?",
-    a: "Yes. We provide detailed photos, damage notes, and scope summaries homeowners can share with their adjuster.",
+    q: "Do you service active commercial environments?",
+    a: "Yes. We regularly support restaurants and other operating facilities where minimizing downtime is critical.",
   },
   {
-    q: "Do you work on shingle, tile, and metal roofs?",
-    a: "Yes. Our crews are trained across Florida's most common residential roofing systems and related flashing details.",
+    q: "Can this service be included in preventive maintenance?",
+    a: "Absolutely. We can align this service with a maintenance interval to improve reliability and catch failures earlier.",
   },
 ];
 ---
@@ -87,19 +87,19 @@ const serviceFaqs = [
 
           <div class="service-detail__panel-grid">
             <article class="detail-panel">
-              <h4>Why Florida Homes Need This Service</h4>
+              <h4>Why Commercial Facilities Need This Service</h4>
               <p>
-                Heat, humidity, and heavy rain can shorten roof lifespan if early warning signs are ignored.
-                This service focuses on leak prevention, weather resistance, and long-term roof performance.
+                Heavy runtime cycles and fast-paced operations can accelerate component wear when issues go unchecked.
+                This service is designed to protect uptime, performance, and day-to-day operational consistency.
               </p>
             </article>
             <article class="detail-panel">
               <h4>Our Typical Process</h4>
               <ol>
-                <li>Detailed on-site roof assessment</li>
-                <li>Clear scope with material recommendations</li>
-                <li>Code-aware installation or repair execution</li>
-                <li>Final walkthrough and cleanup checklist</li>
+                <li>Detailed on-site system assessment</li>
+                <li>Clear scope with practical recommendations</li>
+                <li>Repair or maintenance execution</li>
+                <li>Final performance confirmation checklist</li>
               </ol>
             </article>
           </div>
@@ -119,7 +119,7 @@ const serviceFaqs = [
               Call {SITE.phone}
             </a>
             <a href="/#contact" class="btn btn--dark">
-              Request a Callback
+              Request Service
             </a>
           </div>
         </div>
@@ -127,8 +127,8 @@ const serviceFaqs = [
         <!-- Sidebar -->
         <aside class="service-sidebar">
           <div class="sidebar-card">
-            <h4>Get a Free Estimate</h4>
-            <p>Call or text us anytime. We'll give you an honest, no-pressure quote.</p>
+            <h4>Request Priority Support</h4>
+            <p>Call or message us anytime for urgent commercial system issues.</p>
             <a href={`tel:${SITE.phone.replace(/\D/g,'')}`} class="btn btn--primary" style="width:100%; justify-content:center; margin-top:1rem;">
               Call {SITE.phone}
             </a>
@@ -145,29 +145,6 @@ const serviceFaqs = [
 
       </div>
     </section>
-
-    {service.slug === 'full-roof-replacement' && (
-      <section class="section section--alt">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-label">Project Showcase</span>
-            <h2>Full Roof Replacement In Motion</h2>
-            <p>See the pace and workflow of a professional replacement project.</p>
-          </div>
-          <div class="video-showcase panel-card">
-            <video
-              controls
-              preload="metadata"
-              playsinline
-              poster="/roof-replacement-poster.jpg"
-              src="https://media.stokeleads.com/roofing/videos/4198816-uhd_3840_2160_24fps.mp4"
-            >
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
-    )}
 
     <!-- Related Services -->
     {related.length > 0 && (
@@ -193,20 +170,20 @@ const serviceFaqs = [
         <ProcessSteps
           steps={pageSteps}
           title="How This Project Works"
-          subtitle="From first inspection to final walkthrough, we keep your roofing project clear and organized."
+          subtitle="From first diagnostics to final confirmation, we keep your service request clear and organized."
         />
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <RecentWork projects={showcaseProjects} title="Related Roofing Projects" />
+        <RecentWork projects={showcaseProjects} title="Related Commercial Projects" />
       </div>
     </section>
 
     <section class="section section--alt">
       <div class="container">
-        <TestimonialGrid testimonials={pageTestimonials} title="Social Proof from Nearby Homeowners" />
+        <TestimonialGrid testimonials={pageTestimonials} title="Social Proof from Nearby Operators" />
       </div>
     </section>
 
@@ -493,19 +470,4 @@ const serviceFaqs = [
     line-height: 1.5;
   }
 
-  .video-showcase {
-    padding: 1rem;
-    border-radius: 12px;
-    max-width: 920px;
-    margin: 0 auto;
-  }
-
-  .video-showcase video {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    display: block;
-    background: linear-gradient(160deg, #12284e 0%, #0d1d3a 52%, #0a1428 100%);
-  }
 </style>

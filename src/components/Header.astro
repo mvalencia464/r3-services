@@ -6,7 +6,7 @@ interface Props {
   logoImage?: string;
 }
 
-const { logoImage = "https://media.stokeleads.com/roofing/light-logo.avif" } = Astro.props;
+const { logoImage = "https://media.stokeleads.com/r3-services/logo.avif" } = Astro.props;
 ---
 
 <header class="header">
@@ -51,7 +51,7 @@ const { logoImage = "https://media.stokeleads.com/roofing/light-logo.avif" } = A
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(12, 20, 42, 0.84);
+    background: rgba(15, 15, 18, 0.9);
     border-bottom: 1px solid var(--border);
     backdrop-filter: blur(10px);
   }
@@ -77,7 +77,7 @@ const { logoImage = "https://media.stokeleads.com/roofing/light-logo.avif" } = A
   }
 
   .header__logo img {
-    width: clamp(90px, 11vw, 132px);
+    width: clamp(120px, 13vw, 176px);
     height: auto;
     display: block;
   }
