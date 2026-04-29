@@ -42,46 +42,22 @@ Proactive service plans designed to extend equipment life and prevent costly, un
 - **Industries Served:** Primarily restaurants, foodservice operations, retail facilities, and light commercial buildings.
 - **Primary Location:** Brandon, FL, and surrounding areas.
 
-
-
 miscellaneous business info:  
 813-214-9780
 
 Restaurant & Commercial 
 
-  
-
-
 HVAC • REFRIGERATION • ICE MACHINES • HOT SIDE
-
-  
-
 
 EMERGENCY SERVICE
 
-  
-
-
 LICENSED • INSURED • CAC1824729  
-
-  
-
-
-  
-
-
-  
-
 
 ## Commercial HVAC, Refrigeration, and Kitchen Equipment Repair
 
  
 
-
-
 > Serving restaurants and foodservice operations with reliable commercial service.
-
-
 
 [Call Now](tel:+1813-214-9780)
 
@@ -89,32 +65,22 @@ LICENSED • INSURED • CAC1824729  
 
  
 
-
-
 - Commercial HVAC  
 Repair and maintenance for commercial heating and cooling systems.  
- 
 - Kitchen Equipment Repair  
 Service for hot-side and cold-side commercial kitchen equipment.  
- 
 - Commercial Refrigeration  
 Walk-in coolers, freezers, and foodservice refrigeration.  
- 
 - Preventive Maintenance  
-Planned maintenance to reduce downtime and extend equipment life.  
+Planned maintenance to reduce downtime and extend equipment life.
+
  
-
-
 
 #### Built for Commercial and Restaurant Environments
 
  
 
-
-
 > We focus on commercial systems and understand the demands of restaurant and foodservice operations. Clear communication and practical solutions help minimize downtime and support daily operations.
-
-
 
 #### Need Service? Call Now
 
@@ -143,25 +109,43 @@ Apollo Beach, FL, USA
 ## Brands We Work With and More
 
 - 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+
 - 
 
 - 
+
 - 
+
 - 
+
 - 
+
 - 
+
 - 
+
 - 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
 - 
 
 #### About Us
@@ -175,4 +159,3 @@ R3 Services specializes in commercial HVAC, refrigeration, and equipment repair 
 Brandon, FL, USA
 
 [813-214-9780](tel:8132149780)
-
