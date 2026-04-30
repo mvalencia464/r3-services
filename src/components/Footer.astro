@@ -1,6 +1,11 @@
 ---
 // src/components/Footer.astro
 import { SITE } from '../config/site';
+const phoneHref = `tel:${SITE.phone.replace(/\D/g, '')}`;
+const emailHref = `mailto:${SITE.email}`;
+const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  `${SITE.address}, ${SITE.city}, ${SITE.state}`
+)}`;
 ---
 
 <footer class="footer">
@@ -20,9 +25,14 @@ import { SITE } from '../config/site';
 
     <div class="footer__contact-group" aria-label="Contact information">
       <p class="footer__heading">Contact</p>
+      <div class="footer__actions" aria-label="Quick contact actions">
+        <a class="footer__action" href={phoneHref}>Call</a>
+        <a class="footer__action" href={emailHref}>Email</a>
+        <a class="footer__action" href={mapsHref} target="_blank" rel="noopener noreferrer">Directions</a>
+      </div>
       <div class="footer__contact" aria-label="Contact information">
-        <a class="footer__contact-link" href={`tel:${SITE.phone.replace(/\D/g, '')}`}>{SITE.phone}</a>
-        <a class="footer__contact-link" href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        <a class="footer__contact-link" href={phoneHref}>{SITE.phone}</a>
+        <a class="footer__contact-link" href={emailHref}>{SITE.email}</a>
         <p class="footer__address">{SITE.address}</p>
       </div>
     </div>
@@ -82,6 +92,34 @@ import { SITE } from '../config/site';
     display: flex;
     flex-direction: column;
     gap: 0.35rem;
+  }
+
+  .footer__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer__action {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.55rem 0.78rem;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+  }
+
+  .footer__action:hover {
+    border-color: var(--accent2);
+    color: var(--accent2);
+    background: rgba(245, 198, 92, 0.08);
   }
 
   .footer__contact-group {
@@ -145,25 +183,59 @@ import { SITE } from '../config/site';
   }
 
   @media (max-width: 600px) {
+    .footer {
+      padding: 1.5rem 0 calc(5.5rem + env(safe-area-inset-bottom));
+    }
+
     .footer__inner {
       grid-template-columns: 1fr;
-      text-align: center;
+      gap: 1.1rem;
+      text-align: left;
     }
 
     .footer__logo {
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .footer__contact-group,
     .footer__contact,
     .footer__links-group {
-      align-items: center;
+      align-items: stretch;
+      text-align: left;
+    }
+
+    .footer__brand,
+    .footer__contact-group,
+    .footer__links-group {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 0.95rem;
+      padding: 0.95rem 0.9rem;
+    }
+
+    .footer__actions {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer__action {
+      flex: 1 1 calc(33.333% - 0.4rem);
+      text-align: center;
+      min-width: 5.25rem;
     }
 
     .footer__nav {
-      grid-template-columns: 1fr;
-      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.55rem 0.75rem;
+      justify-items: start;
+    }
+
+    .footer__link {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 0.6rem;
+      padding: 0.5rem 0.6rem;
+      width: 100%;
     }
   }
 </style>
