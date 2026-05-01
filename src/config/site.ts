@@ -107,7 +107,7 @@ export const SITE = {
   about: {
     heading:   "A Commercial Service Partner, Not a One-Time Vendor.",
     body:      "R3 Services is built around long-term relationships with restaurant operators and commercial facility teams. We focus on practical diagnostics, clear communication, and dependable follow-through that protects daily operations.",
-    image:     "https://media.stokeleads.com/r3-services/truck.avif",
+    image:     "https://media.stokeleads.com/r3-services/nathaniel1.avif",
     facts: [
       { label: "Primary Focus", value: "Restaurants" },
       { label: "Service Scope", value: "HVAC + Refrigeration + Kitchen Equipment" },
